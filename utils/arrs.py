@@ -13,6 +13,8 @@ def get(array, index, default=None):
     """
     if index < 0:
         return default
+    if array == []:
+        return "not_list"
 
     return array[index]
 
